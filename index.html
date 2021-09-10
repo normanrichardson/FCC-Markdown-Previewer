@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <!-- link for bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- script for unit tests -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+    <!-- script for including marked -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.7/marked.min.js"
+        integrity="sha512-Sl04EWeJ0QgILm83WoubQbZqh71aWLJP8xnswnKSBI37S+ZtrWVtSHmd1YaYYdC1g9PWN1siY7KO2jU3HtCVHA=="
+        crossorigin="anonymous"></script>
+    <!-- script for including jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div id="header" class="col-11 pl-4 pt-3">
+            <h1>Marked Formatter</h1>
+            <button onclick="clearEditor()">Clear</button>
+            <button onclick="changeColor()">Color</button>
+        </div>
+        </div>
+        <div id="main-panel" class="container-fluid">
+            <div class="row">
+                <div id="editor-container" class="col-lg-4 col-md-6 col-sm-10 offset-sm-1 offset-md-0 p-1">
+                    <textarea id="editor" class="col-12 h-100" oninput="updateMarkup(this)">
+                    </textarea>
+                </div>
+                <div id="preview-container"
+                    class="col-lg-8 col-md-6 col-sm-10 offset-sm-1 offset-md-0 p-1 overflow-auto">
+                    <div id="preview" class="col-12 h-100 overflow-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
