@@ -9,7 +9,7 @@ const updateMarkup = (e) => {
 //initial load of the page. Set up the initial 
 //text in the editor and the previewer
 $(document).ready(function () {
-    $("#editor").html(loadText);
+    $("#editor").val(loadText);
     $("#preview").html(marked(loadText));
     changeColor();
 });
