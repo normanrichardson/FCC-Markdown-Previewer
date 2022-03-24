@@ -10,15 +10,20 @@ View [here](https://normanrichardson.github.io/FCC-Markdown-Previewer/).
 
 The project requirements can be tested by selecting the "hamburger menu" in the top left and selecting the "markdown previewer" option.
 
+### Project Improvements
+
+* Deployed to on Github pages [here](https://normanrichardson.github.io/FCC-Markdown-Previewer/).
+
 ### Usage
 1. Clone the Repository
-> git clone https://github.com/normanrichardson/FCC-Markdown-Previewer.git
-
-> cd FCC-Markdown-Previewer
+    ```
+    $ git clone https://github.com/normanrichardson/FCC-Markdown-Previewer.git
+    $ cd FCC-Markdown-Previewer
+    ```
 
 2. Run a local server
-
-For example:
-> python -m http.server
-
-View on `localhost:8000`
+    For example:
+    ```
+    $ python -m http.server
+    ```
+    View on `localhost:8000`
